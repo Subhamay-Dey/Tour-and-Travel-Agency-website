@@ -18,9 +18,8 @@ const Routers = () => {
             <Route path='/login' element={<Login/>}/> 
             <Route path='/register' element={<Register/>}/> 
             <Route path='/tours/search' element={<SearchResultList/>}/> 
-
         </Routes>
   )
 }
 
-export default Routers
+export default Routers;

@@ -1,10 +1,12 @@
 import React from 'react';
 import "../styles/home.scss";
 import { Container, Row, Col } from 'reactstrap';
-import heroImg from "../images/tour-img01.jpg";
-import heroImg02 from "../images/tour-img02.jpg";
+import heroImg from "../images/hero-img01.jpg";
+import heroImg02 from "../images/hero-img02.jpg";
 import heroImg03 from "../images/tour-img03.jpg";
-
+import heroVideo from "../images/hero-video.mp4";
+import worldImg from "../images/world.png";
+import Subtitle from "../shared/Subtitle";
 
 const Home = () => {
   return (
@@ -13,8 +15,39 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="6">
-              <div className="hero__content"></div>
+              <div className="hero__content">
+                <div className='hero__subtitle d-flex align-items-center'>
+                  <Subtitle subtitle={"Know Before You Go"}/>
+                  <img src={worldImg} alt="world"/>
+                </div>
+                <h1>
+                  Traveling opens the doors to creating{" "}
+                  <span className='highlight'>memories</span>
+                </h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto explicabo magnam accusantium repellat. Quod quisquam quaerat magnam reiciendis, doloribus quos neque a aperiam pariatur quae eum vitae dolorum beatae sequi?
+                </p>
+              </div>
             </Col>
+
+            <Col lg="2">
+              <div className="hero_img-box">
+                <img src={heroImg} alt="" />
+              </div>
+            </Col>
+
+            <Col lg="2">
+              <div className="hero_img-box">
+                <video src={heroVideo} alt="video" autoPlay controls loop></video>
+              </div>
+            </Col>
+
+            <Col lg="2">
+              <div className="hero_img-box">
+                <img src={heroImg02} alt="" />
+              </div>
+            </Col>
+
           </Row>
         </Container>
       </section>

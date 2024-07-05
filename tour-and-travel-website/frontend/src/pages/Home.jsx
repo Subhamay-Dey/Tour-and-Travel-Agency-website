@@ -8,6 +8,8 @@ import heroVideo from "../images/hero-video.mp4";
 import worldImg from "../images/world.png";
 import Subtitle from "../shared/Subtitle";
 
+import SearchBar from '../shared/SearchBar';
+
 const Home = () => {
   return (
     <>
@@ -31,22 +33,24 @@ const Home = () => {
             </Col>
 
             <Col lg="2">
-              <div className="hero_img-box">
+              <div className="hero__img-box">
                 <img src={heroImg} alt="" />
               </div>
             </Col>
 
             <Col lg="2">
-              <div className="hero_img-box">
+              <div className="hero__img-box mt-4">
                 <video src={heroVideo} alt="video" autoPlay controls loop></video>
               </div>
             </Col>
 
             <Col lg="2">
-              <div className="hero_img-box">
+              <div className="hero__img-box mt-5">
                 <img src={heroImg02} alt="" />
               </div>
             </Col>
+
+            <SearchBar/>
 
           </Row>
         </Container>

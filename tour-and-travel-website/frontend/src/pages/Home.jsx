@@ -6,12 +6,14 @@ import heroImg02 from "../images/hero-img02.jpg";
 import heroImg03 from "../images/tour-img03.jpg";
 import heroVideo from "../images/hero-video.mp4";
 import worldImg from "../images/world.png";
+import experienceImg from "../images/experience.png";
 import Subtitle from "../shared/Subtitle";
 
 import SearchBar from '../shared/SearchBar';
 import ServiceList from '../services/ServiceList';
 
 import FeaturedTourList from '../components/Featured-tours/FeaturedTourList';
+import MasonryImagesGallery from '../image-gallery/MasonryImagesGallery';
 
 const Home = () => {
   return (
@@ -72,7 +74,6 @@ const Home = () => {
       </section>
 
       {/* ====== featured tour section start ====== */}
-
       <section>
         <Container>
           <Row>
@@ -84,11 +85,60 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-
       {/* ====== featured tour section end ====== */}
 
+      {/* ====== experience section start ====== */}
+      <section>
+        <Container>
+          <Row>
+            <Col lg="6">
+              <div className="experience__content">
+                <Subtitle subtitle={"Experience"}/>
+                <h2>With our all experiences <br />we will serve you</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br/> Qui alias similique culpa dolores cupiditate iste ad.</p>
+              </div>
+              <div className='counter__wrapper d-flex align-items-center gap-5'>
+                <div className="counter__box">
+                  <span>12k+</span>
+                  <h6>Successful Trip</h6>
+                </div>
+                <div className="counter__box">
+                  <span>2k+</span>
+                  <h6>Regular Clients</h6>
+                </div>
+                <div className="counter__box">
+                  <span>15</span>
+                  <h6>Years experience</h6>
+                </div>
+              </div>
+            </Col>
+            <Col lg="6">
+              <div className="experience__img">
+              <img src={experienceImg} alt="" />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      {/* ====== experience section end ====== */}
+
+      {/* ====== gallery section start ====== */}
+      <section>
+        <Container>
+          <Row>
+            <Col lg="12">
+              <Subtitle subtitle={"Gallery"}/>
+              <h2 className='gallery__title'>Visit our customers tour gallery</h2>
+            </Col>
+            <Col lg="12">
+              <MasonryImagesGallery/>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      {/* ====== gallery section start ====== */}
     </>
   )
 }
 
-export default Home
+export default Home;

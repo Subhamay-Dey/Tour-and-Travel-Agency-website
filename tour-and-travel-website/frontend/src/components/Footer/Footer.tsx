@@ -34,9 +34,12 @@ const footer2__links = [
     path: "/register",
     display: "Register",
   },
-]
+];
 
 function Footer() {
+
+  const year = new Date().getFullYear()
+
   return (
     <footer className='footer'>
       <Container>
@@ -93,8 +96,28 @@ function Footer() {
                       <span><i className="ri-map-pin-line"></i></span>
                       Address:
                     </h6>
+                    <p className='mb-0'>Kolkata, India</p>
                   </ListGroupItem>
-            </ListGroup></Col>
+                  <ListGroupItem  className='ps-0 border-0 d-flex align-items-center gap-4'>
+                    <h6 className='mb-0 d-flex align-items-center gap-3'>
+                      <span><i className="ri-mail-line"></i></span>
+                      Mail
+                    </h6>
+                    <p className='mb-0'>ncdey1966@gmail.com</p>
+                  </ListGroupItem>
+                  <ListGroupItem  className='ps-0 border-0 d-flex align-items-center gap-4'>
+                    <h6 className='mb-0 d-flex align-items-center gap-3'>
+                      <span><i className="ri-phone-fill"></i></span>
+                      Phone
+                    </h6>
+                    <p className='mb-0'>+91 9932938202</p>
+                  </ListGroupItem>
+            </ListGroup>
+          </Col>
+          <Col lg="12" className='text-center pt-5'>
+              <p className="copyright">Copyright {year}, design and develop by Subhamay Dey. All rights reserved.
+              </p>
+          </Col>
         </Row>
       </Container>
     </footer>

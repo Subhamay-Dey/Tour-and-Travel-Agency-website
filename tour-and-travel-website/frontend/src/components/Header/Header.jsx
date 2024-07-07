@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container, Row, Button} from "reactstrap";
 import {NavLink, Link} from "react-router-dom";
-import logo from "../../../public/react.svg";
+import headerlogo from "../../images/logo.png"
 import "./header.scss";
 
 const nav__links = [
@@ -26,7 +26,7 @@ function Header() {
         <Row>
           <div className='nav__wrapper d-flex align-items-center justify-content-between'>
             <div className='logo'>
-              <img src={logo} alt="logo"/>
+              <img src={headerlogo} alt="logo"/>
             </div>
             <div className="navigation">
               <ul className='menu d-flex align-items-center gap-5'>

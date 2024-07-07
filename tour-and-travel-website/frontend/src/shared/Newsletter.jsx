@@ -1,9 +1,8 @@
 import React from 'react';
 import "./newsletter.scss";
 
-import {Container, Row, Col} from "reactstrap"
+import {Container, Row, Col} from "reactstrap";
 import maleTourist from "../images/male-tourist.png";
-
 
 const Newsletter = () => {
   return (

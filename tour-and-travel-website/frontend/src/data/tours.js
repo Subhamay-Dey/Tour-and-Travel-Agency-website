@@ -5,6 +5,8 @@ import tourImg04 from "../images/tour-img04.jpg";
 import tourImg05 from "../images/tour-img05.jpg";
 import tourImg06 from "../images/tour-img06.jpg";
 import tourImg07 from "../images/tour-img07.jpg";
+import tourImg08 from "../images/tour-img08.jpg";
+
 
 const tours = [
   {
@@ -31,8 +33,8 @@ const tours = [
   },
   {
     id: "02",
-    title: "Bali, Indonesia",
-    city: "Indonesia",
+    title: "Lakshadweep, India",
+    city: "India",
     distance: 400,
     price: 99,
     maxGroupSize: 8,
@@ -49,8 +51,8 @@ const tours = [
   },
   {
     id: "03",
-    title: "Snowy Mountains, Thailand",
-    city: "Thailand",
+    title: "Alpes Mountains, Europe",
+    city: "Switzerland",
     distance: 500,
     price: 99,
     maxGroupSize: 8,
@@ -134,15 +136,15 @@ const tours = [
   },
   {
     id: "08",
-    title: "Snowy Mountains, Thailand",
-    city: "Thailand",
+    title: "Hawaii, US",
+    city: "United States",
     distance: 500,
     price: 99,
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [],
     avgRating: 4.5,
-    photo: tourImg03,
+    photo: tourImg08,
     featured: false,
   },
 ];

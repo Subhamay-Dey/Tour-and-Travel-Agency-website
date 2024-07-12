@@ -5,7 +5,7 @@ import galleryImg05 from "../../images/gallery-03.jpg";
 import galleryImg06 from "../../images/gallery-04.jpg";
 import galleryImg07 from "../../images/gallery-05.jpg";
 import galleryImg04 from "../../images/gallery-06.jpg";
-import galleryImg08 from "../../images/gallery-07.jpg";
+import galleryImg08 from "../../images/gallery-08.jpg";
 
 const galleryImages = [
     galleryImg01,
@@ -15,7 +15,7 @@ const galleryImages = [
     galleryImg05,
     galleryImg06,
     galleryImg07,
-    galleryImg08
+    galleryImg08,
 ]
 
 export default galleryImages

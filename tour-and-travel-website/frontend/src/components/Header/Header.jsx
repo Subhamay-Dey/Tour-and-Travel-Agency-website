@@ -1,8 +1,9 @@
 import React from 'react';
 import {Container, Row, Button} from "reactstrap";
 import {NavLink, Link} from "react-router-dom";
-import headerlogo from "../../images/logo.png"
+import headerlogo from "../../images/logo.png";
 import "./header.scss";
+import { SignedIn, UserButton, useUser} from "@clerk/clerk-react";
 
 const nav__links = [
   {
@@ -20,6 +21,9 @@ const nav__links = [
 ]
 
 function Header() {
+
+  const {user} = useUser();
+
   return (
     <header className="header">
       <Container>
@@ -41,8 +45,11 @@ function Header() {
             </div>
             <div className='nav__right d-flex align-items-center gap-4'>
               <div className="nav__btns d-flex align-items-center gap-4">
-                <Button className='btn secondary__btn'><Link to="/login">Login</Link></Button>
-                <Button className='btn primary__btn'><Link to="/register">Register</Link></Button>
+                <Button className='btn secondary__btn'>
+                  <Link to="/login" className='text-gray-600'>
+                  {SignedIn ? <UserButton/> : "Login"}</Link>
+                </Button>
+                <Button className='btn primary__btn'><Link to="/login">Register</Link></Button>
               </div>
               <span className='mobile__menu'>
               <i class="ri-menu-line"></i>
@@ -55,4 +62,4 @@ function Header() {
   )
 }
 
-export default Header
+export default Header
